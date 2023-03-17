@@ -17,7 +17,8 @@ public class outprintAop {
     @Before("execution(* com.example.Controller..*(..))")
     public void beforeOutPrint(JoinPoint joinPoint){
 
-        logger.info("beforeOutPrint() --> ");
+        // logger.info("beforeOutPrint() --> ");
+        logger.info("afterOutPrint() --> ");
         logger.info("getName() -->" + joinPoint.getSignature().getName());
         System.out.println("Before recoding...");
         System.out.println("====================================");
